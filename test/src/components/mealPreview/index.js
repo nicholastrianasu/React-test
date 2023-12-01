@@ -1,14 +1,16 @@
 import React from 'react';
-
 import './index.css';
 
-const MealPreviw = ({ meal }) => {
+const MealPreview = ({ meal }) => {
+  const mealStyle = {
+    fontFamily: "'Your-New-Font', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
+  };
 
-	return (
-		<div className='meal-previw'>
-		<img src={meal.strMealThumb} alt={meal.strMeal} />
-		</div>
-	);
+  return (
+    <div className='meal-preview' style={mealStyle}>
+      <img src={meal.strMealThumb} alt={meal.strMeal} />
+    </div>
+  );
 };
 
-export default MealPreviw;
+export default MealPreview;
